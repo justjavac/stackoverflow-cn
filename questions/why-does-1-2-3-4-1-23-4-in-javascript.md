@@ -56,6 +56,7 @@ Easy, huh? With all that out of the way, we can move on to the overview itself.
 
 **Different result types of + by operand types**
 
+```javascript
 -------------------------------------------------------------------------------------------
             | undefined | boolean | number | string | function | object | null   | array  | 
 -------------------------------------------------------------------------------------------
@@ -77,6 +78,8 @@ null        | number    | number  | number | string | string   | string | number
 array       | string    | string  | string | string | string   | string | string | string | 
 
 -------------------------------------------------------------------------------------------
+```
+
 \* this applies to Chrome 13, Firefox 6, Opera 11 and IE9. Checking other browsers and versions is left as an exercise for the reader.
 
 **Note**: As pointed out by [CMS](http://stackoverflow.com/users/5445/cms), for certain cases of objects such as `Number`, `Boolean` and custom ones the `+` operator doesn't necessarily produce a string result. 
