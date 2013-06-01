@@ -3,7 +3,7 @@ Why does Math.round(0.49999999999999994) return 1
 
 http://stackoverflow.com/questions/9902968/why-does-math-round0-49999999999999994-return-1
 
-In the following program you can see that for each value slightly less that .5 is rounded down, except for 0.5.
+In the following program you can see that for each value slightly less that `.5` is rounded down, except for `0.5`.
 
 ```java
 for (int i = 10; i >= 0; i--) {
@@ -51,7 +51,8 @@ I am using Java 6 update 31.
 
 http://stackoverflow.com/a/9903075/343194
 
-According to the Java 6 docs, round(x) is implemented as floor(x+0.5).<super>1</super> But 0.5+0.49999999999999994 is exactly 1 in double precision:
+According to the Java 6 docs, `round(x)` is implemented as `floor(x+0.5)`.<sup>1</sup> 
+But `0.5+0.49999999999999994` is exactly 1 in double precision:
 
 ```java
 static void print(double d) {
@@ -78,12 +79,13 @@ gives:
 3ff0000000000000
 ```
 
-This is because 0.49999999999999994 has a smaller exponent than 0.5, so when they're added, its mantissa is shifted, and the ULP gets bigger.
+This is because `0.49999999999999994` has a smaller exponent than `0.5`, so when they're added, its mantissa is shifted, and the ULP gets bigger.
 
 --------------
 
 1. At least, this is the definition given in the Java 6 docs. 
 It's not given in the Java 7 docs, which may explain why people are seeing different behaviour when they run in Java 7. 
+
 UPDATE: According to Simon Nickerson's answer, it's a [known bug][1], so this almost certainly explains the difference in the docs and the observed behaviour between versions.
 
 [1]: http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6430675
