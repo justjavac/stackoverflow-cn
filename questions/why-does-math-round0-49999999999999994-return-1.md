@@ -85,7 +85,6 @@ This is because `0.49999999999999994` has a smaller exponent than `0.5`, so when
 
 1. At least, this is the definition given in the Java 6 docs. 
 It's not given in the Java 7 docs, which may explain why people are seeing different behaviour when they run in Java 7. 
-
 UPDATE: According to Simon Nickerson's answer, it's a [known bug][1], so this almost certainly explains the difference in the docs and the observed behaviour between versions.
 
 [1]: http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6430675
