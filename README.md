@@ -10,4 +10,4 @@ stackoverflow-cn
 
 * javascript
   - [Why does [1,2] + [3,4] = “1,23,4” in JavaScript?](questions/why-does-1-2-3-4-1-23-4-in-javascript.md)
-  - [Can you explain why ++[[\]][+[\]]+[+[\]] = “10”?](questions/can-you-explain-why-10.md)
+  - [Can you explain why ++[[]][+[]]+[+[]] = “10”?](questions/can-you-explain-why-10.md)
