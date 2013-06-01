@@ -5,5 +5,9 @@ stackoverflow-cn
 
 ##目录
 
-+ java
+* java
   - [为什么 Math.round(0.49999999999999994) 的结果是 1](questions/why-does-math-round0-49999999999999994-return-1.md) 未翻译
+
+* javascript
+  - [Why does [1,2] + [3,4] = “1,23,4” in JavaScript?](questions/why-does-1-2-3-4-1-23-4-in-javascript.md)
+  - [Can you explain why ++[[\]][+[\]]+[+[\]] = “10”?](questions/can-you-explain-why-10.md)
