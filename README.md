@@ -19,3 +19,4 @@ stackoverflow-cn
 
 - [Why does [1,2] + [3,4] = “1,23,4” in JavaScript?](questions/why-does-1-2-3-4-1-23-4-in-javascript.md) （[中文](http://justjavac.com/javascript/2012/12/18/why-does-1-2-plus-3-4-equal-1-23-4-in-javascript.html)）
 - [Can you explain why ++[[]][+[]]+[+[]] = “10”?](questions/can-you-explain-why-10.md) （[中文](http://justjavac.com/javascript/2012/05/24/can-you-explain-why-10.html)）
+- [What is % in JavaScript?](questions/why-does-1-2-3-4-1-23-4-in-javascript.md) 未翻译
