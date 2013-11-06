@@ -18,7 +18,7 @@ For example, the line in [string.js][stringjs]:
 
 [stringjs]: http://code.google.com/searchframe#W9JxUuHYyMg/trunk/src/string.js&q=StringBuilderConcat%20package%3av8%5C.googlecode%5C.com&ct=rc&cd=5&sq=
 
-  return %StringBuilderConcat(parts, len + 1, "");
+    return %StringBuilderConcat(parts, len + 1, "");
 
 When encountered by the parser, the `StringBuilderConcat` method will be executed. 
 You can find a list of the runtime methods available to the V8 JavaScript files in [runtime.h][] (note, I have no experience with C++, 
@@ -26,12 +26,12 @@ so for all I know this has nothing to do with the `StringBuilderConcat` method r
 
 [runtime.h]: http://code.google.com/searchframe#W9JxUuHYyMg/trunk/src/runtime.h&q=StringBuilderConcat%20package%3av8%5C.googlecode%5C.com&ct=rc&cd=4&sq=
 
-  #define RUNTIME_FUNCTION_LIST_ALWAYS_1(F) \
-    /* Property access */ \
-    F(GetProperty, 2, 1) \
-    F(KeyedGetProperty, 2, 1) \
-    /* ... */
-    F(StringBuilderConcat, 3, 1) \
-    /* ... */
+    #define RUNTIME_FUNCTION_LIST_ALWAYS_1(F) \
+      /* Property access */ \
+      F(GetProperty, 2, 1) \
+      F(KeyedGetProperty, 2, 1) \
+      /* ... */
+      F(StringBuilderConcat, 3, 1) \
+      /* ... */
   
 As has already been stated, `return %foo` would throw a SyntaxError in JavaScript.
